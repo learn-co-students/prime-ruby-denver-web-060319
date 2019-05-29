@@ -1,3 +1,4 @@
+=begin
 def prime?(n)
   if n == -1 || n == 0 || n == 1
     return false
@@ -8,4 +9,15 @@ def prime?(n)
   elsif n % 2 != 0 || n % 3 != 0 || n % 5 != 0 || n % 7 != 0
     return true
   end
+end
+=end
+
+def prime?(n)
+  return false if n < 2 
+  return true if n == 3 || n == 2 
+    if (2...n-1).any?{|i| n % i == 0}
+      false
+    else
+      true
+    end
 end
