@@ -1,3 +1,5 @@
+## It almost works perfectly. Gets the numbers above 2 correct.
+
 def prime?(number)
 
   if number <= 1
@@ -27,6 +29,5 @@ def prime?(number)
     else
       return false
     end
-  end
 
 end
